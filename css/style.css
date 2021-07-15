@@ -8,9 +8,9 @@
 * Facebook: https://web.facebook.com/Untree.co/
 */
 body {
-  font-family: "Crimson Text", serif;
-  line-height: 1.5;
-  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+  font-size: 17px;
   color: #000000;
   background: #E8E5DE; }
   body:before {
@@ -42,7 +42,7 @@ a {
 
 h1, h2, h3, h4, h5 {
   color: #000;
-  font-family: "Playfair Display", serif; }
+  font-family: 'Poppins', sans-serif;  }
 
 .text-primary {
   color: #000 !important; }
@@ -59,7 +59,7 @@ a.text-primary {
   background-color: #000 !important; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  font-family: "Playfair Display", serif; }
+  font-family: 'Poppins', sans-serif;  }
 
 .btn {
   padding-top: 12px;
@@ -154,8 +154,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 .logo {
   font-size: 25px;
-  font-family: "Playfair Display", serif;
-  font-weight: bold; }
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600; }
   .logo a {
     color: #000; }
 
@@ -556,7 +556,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   .custom-hero .hero-heading {
     font-size: 60px;
     line-height: 0;
-    font-weight: bold; }
+    font-weight: 600; }
     @media (max-width: 991.98px) {
       .custom-hero .hero-heading {
         font-size: 40px; } }
@@ -671,7 +671,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       -ms-transform: scale(1);
       transform: scale(1); }
   .product h3 {
-    font-family: "Playfair Display", serif;
+    font-family: 'Poppins', sans-serif; 
     font-size: 18px; }
   .product strong {
     font-weight: 700;
@@ -694,12 +694,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-size: 12px;
   font-weight: 700;
   color: #000000;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: .2rem;
   text-transform: uppercase; }
 
 .serif {
-  font-family: "Playfair Display", serif; }
+  font-family: 'Poppins', sans-serif;  }
 
 .section-4 .custom-prev-v2, .section-4 .custom-next-v2 {
   font-size: 14px;
@@ -746,7 +746,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 .service-2 .text h2 {
   font-size: 16px;
-  font-weight: bold; }
+  font-weight: 600; }
 
 .service-2 .text p {
   font-weight: normal;
@@ -1222,7 +1222,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   .article .share {
     top: 20px; }
     .article .share h3 {
-      font-family: "Playfair Display", serif;
+      font-family: 'Poppins', sans-serif; 
       font-size: 12px; }
       @media (max-width: 991.98px) {
         .article .share h3 {
@@ -1302,7 +1302,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
           color: #ffffff; }
 
 .categories_tags {
-  font-weight: bold; }
+  font-weight: 600; }
 
 .post-single-navigation a {
   line-height: 1.5;
