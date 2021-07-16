@@ -35,12 +35,6 @@ function blog_setup() {
      */
     /* Pinegrow generated Register Menus Begin */
 
-    register_nav_menu(  'fonav1', __( 'fonav1', 'blog' )  );
-
-    register_nav_menu(  'fonav2', __( '_fo-nav-2', 'blog' )  );
-
-    register_nav_menu(  'fonav3', __( 'fonav3', 'blog' )  );
-
     /* Pinegrow generated Register Menus End */
     
 /*
@@ -158,28 +152,29 @@ function blog_customize_register( $wp_customize ) {
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
-    $wp_customize->add_setting( 'About-title', array(
+    $wp_customize->add_setting( 'About', array(
         'type' => 'theme_mod',
-        'default' => __( 'About', 'blog' ),
+        'default' => __( 'footer', 'blog' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
-    $wp_customize->add_control( 'About-title', array(
-        'label' => __( 'About-title', 'blog' ),
+    $wp_customize->add_control( 'About', array(
+        'label' => __( 'About', 'blog' ),
         'type' => 'text',
         'section' => 'footer'
     ));
 
+    $wp_customize->add_section( 'blog_default_cs', array('title' => 'Default section'));
+
     $wp_customize->add_setting( 'About-txt', array(
         'type' => 'theme_mod',
-        'default' => __( 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.', 'blog' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
     $wp_customize->add_control( 'About-txt', array(
         'label' => __( 'About-txt', 'blog' ),
-        'type' => 'textarea',
-        'section' => 'footer'
+        'type' => 'text',
+        'section' => 'blog_default_cs'
     ));
 
     /* Pinegrow generated Customizer Controls End */

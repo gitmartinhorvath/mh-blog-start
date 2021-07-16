@@ -39,8 +39,6 @@ function blog_setup() {
 
     register_nav_menu(  'fonav2', __( '_fo-nav-2', 'blog' )  );
 
-    register_nav_menu(  'fonav3', __( 'fonav3', 'blog' )  );
-
     /* Pinegrow generated Register Menus End */
     
 /*

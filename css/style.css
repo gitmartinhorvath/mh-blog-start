@@ -1313,12 +1313,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   border-radius: 4px;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  display: inline-block; }
+  display: inline-block;
+  margin: 10px !important; }
   .post-single-navigation a span {
     margin-bottom: 10px;
     font-size: 11px;
     text-transform: uppercase;
-    margin: 10px !important; }
+   }
 
 .section-latest {
   padding-top: 100px;
@@ -1658,4 +1659,96 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 ul{
   list-style: disc;
+}
+input{
+  display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+textarea{
+  display: block;
+    width: 100%;
+    height: calc(7em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.avatar, .avatar-32 .photo{
+  width: 100%;
+  height: 100%;
+}
+
+.comment-list li .comment-body .reply {
+  padding: 7px 12px;
+background: transparent;
+color: #ffffff !important;
+text-transform: uppercase;
+border-radius: 30px;
+font-size: 10px;
+font-weight: 900;
+letter-spacing: .1rem;
+
+}
+
+.comment-reply-link{
+  margin-left: 20px;;
+}
+.fn > a{
+  display: inline-flex !important;
+
+}
+
+.comment-list li .vcard {
+  width: 100%;
+  float: left;
+  padding-bottom: 10px;
+}
+.reply{
+  max-width: 100%;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+
+}
+comment-reply-link{
+  padding: 0;
+  margin: 0;
+}
+.comment-reply-link {
+    margin-left: 0px !important;
+}
+.comment-list li .comment-body {
+  float: right;
+  width: calc(100% - 0px);
+  margin-top: 20px;
+  margin-bottom: 40px;
+  
+}
+.widgettitle{
+  font-size: 16px;
+    font-weight: 700;
+    margin: 15px 10px;
+}
+
+.article .share h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }

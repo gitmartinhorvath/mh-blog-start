@@ -35,12 +35,6 @@ function blog_setup() {
      */
     /* Pinegrow generated Register Menus Begin */
 
-    register_nav_menu(  'fonav1', __( 'fonav1', 'blog' )  );
-
-    register_nav_menu(  'fonav2', __( '_fo-nav-2', 'blog' )  );
-
-    register_nav_menu(  'fonav3', __( 'fonav3', 'blog' )  );
-
     /* Pinegrow generated Register Menus End */
     
 /*
@@ -311,6 +305,7 @@ function pgwp_sanitize_placeholder($input) { return $input; }
 require_once "inc/custom.php";
 require_once "inc/wp_pg_helpers.php";
 require_once "inc/wp_smart_navwalker.php";
+require_once "inc/bootstrap/wp_bootstrap4_navwalker.php";
 
     /* Pinegrow generated Include Resources End */
 ?>

@@ -35,12 +35,6 @@ function blog_setup() {
      */
     /* Pinegrow generated Register Menus Begin */
 
-    register_nav_menu(  'fonav1', __( 'fonav1', 'blog' )  );
-
-    register_nav_menu(  'fonav2', __( '_fo-nav-2', 'blog' )  );
-
-    register_nav_menu(  'fonav3', __( 'fonav3', 'blog' )  );
-
     /* Pinegrow generated Register Menus End */
     
 /*
@@ -131,8 +125,8 @@ function blog_widgets_init() {
     /* Pinegrow generated Register Sidebars Begin */
 
     register_sidebar( array(
-        'name' => __( '_widget', 'blog' ),
-        'id' => '_widget',
+        'name' => __( '_wiget', 'blog' ),
+        'id' => '_wiget',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="widgettitle">',
@@ -152,35 +146,6 @@ function blog_customize_register( $wp_customize ) {
     // Do stuff with $wp_customize, the WP_Customize_Manager object.
 
     /* Pinegrow generated Customizer Controls Begin */
-
-    $wp_customize->add_section( 'footer', array(
-        'title' => __( 'Footer', 'blog' )
-    ));
-    $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
-
-    $wp_customize->add_setting( 'About-title', array(
-        'type' => 'theme_mod',
-        'default' => __( 'About', 'blog' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'About-title', array(
-        'label' => __( 'About-title', 'blog' ),
-        'type' => 'text',
-        'section' => 'footer'
-    ));
-
-    $wp_customize->add_setting( 'About-txt', array(
-        'type' => 'theme_mod',
-        'default' => __( 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.', 'blog' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'About-txt', array(
-        'label' => __( 'About-txt', 'blog' ),
-        'type' => 'textarea',
-        'section' => 'footer'
-    ));
 
     /* Pinegrow generated Customizer Controls End */
 
