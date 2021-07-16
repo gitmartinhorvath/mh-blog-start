@@ -153,6 +153,10 @@ function blog_customize_register( $wp_customize ) {
 
     /* Pinegrow generated Customizer Controls Begin */
 
+    $wp_customize->add_section( 'tit', array(
+        'title' => __( 'Title-home', 'blog' )
+    ));
+
     $wp_customize->add_section( 'img', array(
         'title' => __( 'Image', 'blog' )
     ));
@@ -161,6 +165,30 @@ function blog_customize_register( $wp_customize ) {
         'title' => __( 'Footer', 'blog' )
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
+
+    $wp_customize->add_setting( 'tit-home-id', array(
+        'type' => 'theme_mod',
+        'default' => __( 'Our Blog', 'blog' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'tit-home-id', array(
+        'label' => __( 'Title-home', 'blog' ),
+        'type' => 'text',
+        'section' => 'tit'
+    ));
+
+    $wp_customize->add_setting( 'sub-tit-id', array(
+        'type' => 'theme_mod',
+        'default' => __( 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.', 'blog' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'sub-tit-id', array(
+        'label' => __( 'Sub-title-home', 'blog' ),
+        'type' => 'textarea',
+        'section' => 'tit'
+    ));
 
     $wp_customize->add_setting( '_img', array(
         'type' => 'theme_mod',

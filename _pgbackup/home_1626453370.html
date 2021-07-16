@@ -165,6 +165,15 @@ Contributor
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <ul class="list-unstyled custom-pagination">
+                                <li wp-loop wp-if-custom="PG_Pagination::isPaginated()" wp-if-custom-operator="||" wp-if-custom-not="true" wp-if-custom-outer>
+                                    <a href="#" wp-pagination-field wp-pagination-field-item="page" wp-pagination-field-query>1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

@@ -186,7 +186,7 @@ function blog_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'sub-tit-id', array(
         'label' => __( 'Sub-title-home', 'blog' ),
-        'type' => 'textarea',
+        'type' => 'text',
         'section' => 'tit'
     ));
 
