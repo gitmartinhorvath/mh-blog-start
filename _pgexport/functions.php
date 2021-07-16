@@ -266,6 +266,7 @@ function pgwp_sanitize_placeholder($input) { return $input; }
 /* Pinegrow generated Include Resources Begin */
 require_once "inc/custom.php";
 require_once "inc/wp_pg_helpers.php";
+require_once "inc/wp_smart_navwalker.php";
 
     /* Pinegrow generated Include Resources End */
 ?>

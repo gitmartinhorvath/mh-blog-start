@@ -1317,7 +1317,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   .post-single-navigation a span {
     margin-bottom: 10px;
     font-size: 11px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 10px !important; }
 
 .section-latest {
   padding-top: 100px;
@@ -1650,3 +1651,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       content: "";
       height: 1px;
       background: #000000; }
+
+/*cunsom*/
+.categories_tags {
+  display: inline-flex !important;
+}
+ul{
+  list-style: disc;
+}

@@ -57,23 +57,18 @@ Contributor
             <div class="container">
                 <div class="site-navigation">
                     <a href="index.html" class="logo float-left m-0"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/Logo_black.svg" height="70" width="70"> <span class="text-primary"></span></a>
-                    <ul class="js-clone-nav d-none d-lg-inline-noone text-left site-menu">
-                        <li>
-                            <a href="index.html"><?php _e( 'Home', 'blog' ); ?></a>
-                        </li>
-                        <li>
-                            <a href="portfolio.html"><?php _e( 'Portfolio', 'blog' ); ?></a>
-                        </li>
-                        <li>
-                            <a href="elements.html"><?php _e( 'Elements', 'blog' ); ?></a>
-                        </li>
-                        <li>
-                            <a href="about.html"><?php _e( 'About', 'blog' ); ?></a>
-                        </li>
-                        <li>
-                            <a href="contact.html"><?php _e( 'Contact Us', 'blog' ); ?></a>
-                        </li>
-                    </ul>
+                    <?php if ( has_nav_menu( 'primary' ) ) : ?>
+                        <?php
+                            PG_Smart_Walker_Nav_Menu::$options['template'] = '<li id="{ID}" class="{CLASSES}">
+                                                        <a {ATTRS}>{TITLE}</a>
+                                                    </li>';
+                            wp_nav_menu( array(
+                                'container' => '',
+                                'theme_location' => 'primary',
+                                'items_wrap' => '<ul class="%2$s d-lg-inline-noone d-none js-clone-nav site-menu text-left" id="%1$s">%3$s</ul>',
+                                'walker' => new PG_Smart_Walker_Nav_Menu()
+                        ) ); ?>
+                    <?php endif; ?>
                     <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-block" data-toggle="collapse" data-target="#main-navbar"> <span></span> </a>
                 </div>
             </div>
