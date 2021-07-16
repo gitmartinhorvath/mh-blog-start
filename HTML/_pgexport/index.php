@@ -57,6 +57,7 @@
             <div class="col-lg-3 mb-5 mb-lg-0 order-lg-3">
                 <div class="mb-4">
                     <img src="<?php echo PG_Image::getUrl( get_theme_mod( '_img', esc_url( get_template_directory_uri() . '/images/img_h_5-min.jpg' ) ), 'full' ) ?>" alt="Image" class="img-fluid rounded">
+                    <?php _e( 'git', 'blog' ); ?> 
                 </div>                             
                 <?php if ( is_active_sidebar( '_widget' ) ) : ?>
                     <div class="share floating-block sticky-top">

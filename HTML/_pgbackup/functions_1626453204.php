@@ -186,7 +186,7 @@ function blog_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'sub-tit-id', array(
         'label' => __( 'Sub-title-home', 'blog' ),
-        'type' => 'text',
+        'type' => 'textarea',
         'section' => 'tit'
     ));
 
@@ -354,6 +354,7 @@ function pgwp_sanitize_placeholder($input) { return $input; }
 /* Pinegrow generated Include Resources Begin */
 require_once "inc/custom.php";
 require_once "inc/wp_pg_helpers.php";
+require_once "inc/bootstrap/wp_bootstrap4_pagination.php";
 require_once "inc/wp_smart_navwalker.php";
 
     /* Pinegrow generated Include Resources End */
