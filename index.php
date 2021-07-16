@@ -40,16 +40,27 @@
             <?php endif; ?> 
             <div class="col-md-12 col-lg-1 order-lg-1"> 
                 <div class="share sticky-top"> 
-                    <h3><?php _e( 'Share', 'blog' ); ?></h3> 
+                    <h3><?php _e( 'Zdieľať', 'blog' ); ?></h3> 
+
+
+                    <?php 
+                    /* Social Share Buttons template for Wordpress
+                    * By Daan van den Bergh 
+                    */ 
+
+                    $postUrl = 'http' . ( isset( $_SERVER['HTTPS'] ) ? 's' : '' ) . '://' . "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}"; ?>
+
+              
+
                     <ul class="list-unstyled share-article"> 
                         <li> 
-                            <a href="#"><span class="icon-facebook"></span></a> 
+                            <a target="_blank" class="share-button share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $postUrl; ?>" title="Share on Facebook"><span class="icon-facebook"></span></a> 
                         </li>                                     
                         <li> 
-                            <a href="#"><span class="icon-twitter"></span></a> 
+                            <a target="_blank" class="share-button share-twitter" href="https://twitter.com/intent/tweet?url=<?php echo $postUrl; ?>&text=<?php echo the_title(); ?>&via=<?php the_author_meta( 'twitter' ); ?>" title="Tweet this"><span class="icon-twitter"></span></a> 
                         </li>                                     
                         <li> 
-                            <a href="#"><span class="icon-pinterest"></span></a> 
+                            <a arget="_blank" class="share-button share-googleplus" href="https://plus.google.com/share?url=<?php echo $postUrl; ?>" title="Share on Google+"><span class="icomoon icon-google-plus"></span></a> 
                         </li>                                     
                     </ul>                                 
                 </div>                             
