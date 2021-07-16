@@ -153,10 +153,26 @@ function blog_customize_register( $wp_customize ) {
 
     /* Pinegrow generated Customizer Controls Begin */
 
+    $wp_customize->add_section( 'img', array(
+        'title' => __( 'Image', 'blog' )
+    ));
+
     $wp_customize->add_section( 'footer', array(
         'title' => __( 'Footer', 'blog' )
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
+
+    $wp_customize->add_setting( '_img', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, '_img', array(
+        'label' => __( 'Image-change', 'blog' ),
+        'type' => 'media',
+        'mime_type' => 'image',
+        'section' => 'img'
+    ) ) );
 
     $wp_customize->add_setting( 'About-title', array(
         'type' => 'theme_mod',

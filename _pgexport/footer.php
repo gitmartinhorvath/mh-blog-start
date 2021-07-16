@@ -78,7 +78,7 @@
                                             wp_nav_menu( array(
                                                 'container' => '',
                                                 'theme_location' => 'fonav3',
-                                                'items_wrap' => '<ul class="%2$s links list-unstyled" data-pg-collapsed id="%1$s">%3$s</ul>',
+                                                'items_wrap' => '<ul class="%2$s links list-unstyled" id="%1$s">%3$s</ul>',
                                                 'walker' => new PG_Smart_Walker_Nav_Menu()
                                         ) ); ?>
                                     <?php endif; ?>
