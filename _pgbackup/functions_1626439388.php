@@ -150,10 +150,6 @@ if ( ! function_exists( 'blog_enqueue_scripts' ) ) :
 
         /* Pinegrow generated Enqueue Scripts Begin */
 
-    wp_register_script( 'inline-script-1', '', [], '', true );
-    wp_enqueue_script( 'inline-script-1' );
-    wp_add_inline_script( 'inline-script-1', 'document.write(new Date().getFullYear());');
-
     wp_deregister_script( 'jquery' );
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.5.1.min.js', false, null, true);
 

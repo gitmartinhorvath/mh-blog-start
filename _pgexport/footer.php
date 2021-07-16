@@ -12,7 +12,7 @@
                             <h3><?php _e( 'Connect with us', 'blog' ); ?></h3>
                             <ul class="social list-unstyled">
                                 <li>
-                                    <a href="#"><span class="icon-facebook"><?php echo do_shortcode("[juiz_sps buttons="diigo, evernote, facebook, linkedin, mix, pinterest, pocket, reddit, twitter, tumblr, viadeo, vk, weibo, whatsapp, shareapi, mail, bookmark, print"]"); ?></span></a>
+                                    <a href="#"><span class="icon-facebook"></span></a>
                                 </li>
                                 <li>
                                     <a href="#"><span class="icon-twitter"></span></a>
