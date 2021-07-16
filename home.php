@@ -32,30 +32,9 @@
                     </div>
                 <?php endwhile; ?>
             <?php else : ?>
-                <p><?php _e( 'Sorry, no posts matched your criteria.', 'blog' ); ?></p>
+                <p><?php _e( 'Ľutujeme, vašim kritériám nezodpovedajú žiadne príspevky.', 'blog' ); ?></p>
             <?php endif; ?>                                                                                                                              
-        </div>                     
-        <div class="row"> 
-            <div class="col-lg-12 text-center"> 
-                <ul class="list-unstyled custom-pagination"> 
-                    <li> 
-                        <a href="#"><?php _e( '1', 'blog' ); ?></a> 
-                    </li>                                 
-                    <li class="active"> 
-                        <a href="#"><?php _e( '2', 'blog' ); ?></a> 
-                    </li>                                 
-                    <li> 
-                        <a href="#"><?php _e( '3', 'blog' ); ?></a> 
-                    </li>                                 
-                    <li> 
-                        <a href="#"><?php _e( '4', 'blog' ); ?></a> 
-                    </li>                                 
-                    <li> 
-                        <a href="#"><?php _e( '5', 'blog' ); ?></a> 
-                    </li>                                 
-                </ul>                             
-            </div>                         
-        </div>                     
+        </div>                                         
     </div>                 
 </div>                         
 
