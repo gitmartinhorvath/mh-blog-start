@@ -1752,3 +1752,25 @@ comment-reply-link{
   font-size: 16px;
   font-weight: 600;
 }
+
+figcaption{
+	font-size:small
+}
+.h5, h5 {
+    font-size: 1.25rem;
+    line-height: 2;
+}
+.wp-block-pullquote {
+    padding: 3em 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    border-left: 1px solid #000 !important;
+}
+.wp-block-pullquote.is-style-solid-color blockquote {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 60%;
+    font-size: small !important;
+}

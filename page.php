@@ -18,21 +18,7 @@
                 <?php while ( have_posts() ) : the_post(); ?>
                     <?php PG_Helper::rememberShownPost(); ?>
                     <article class="col-lg-8 order-lg-2 px-lg-5" id="post-<?php the_ID(); ?>"> 
-                        <?php the_content(); ?> 
-                        <div class="pt-5 categories_tags "> 
-                            <p><?php _e( 'Kategória :', 'blog' ); ?> <?php the_category(); ?></p> 
-                        </div>                                     
-                        <!--  <div class="post-single-navigation d-flex align-items-stretch">
-                    <a href="#" class="" wp-prev-post-link> A Mounteering Guide For Beginners </a>
-                    <a href="#" class="" wp-next-post-link> A Mounteering Guide For Beginners </a>
-                </div>-->                                     
-                        <div class="pt-5"> 
-                            <ul class="comment-list"> 
-                                <li class="comment">
-                                    <?php comments_template(); ?>
-                                </li>                                             
-                            </ul>                                         
-                        </div>                                     
+                        <?php the_content(); ?>                              
                     </article>
                 <?php endwhile; ?>
             <?php else : ?>
@@ -80,4 +66,3 @@
 </div>                         
 
 <?php get_footer(); ?>
-
