@@ -11,18 +11,7 @@
                         <div class="widget"> 
                             <h3><?php _e( 'Spoj sa so mnou ', 'blog' ); ?></h3> 
                             <ul class="social list-unstyled"> 
-                                <!-- <li> 
-                                    <a href="https://www.facebook.com/uiux.martinhorvath"><span class="icon-facebook"></span></a> 
-                                </li> -->                                
-                               <!-- <li> 
-                                    <a href="#"><span class="icon-twitter"></span></a> 
-                                </li>                                
-                                <li> 
-                                    <a href="#"><span class="icon-instagram"></span></a> 
-                                </li>                                 
-                                <li> 
-                                    <a href="#"><span class="icon-dribbble"></span></a> 
-                                </li> -->                                 
+                                                                 
                                 <li> 
                                     <a href="https://www.linkedin.com/in/ui-martin-horvath/"><span class="icon-linkedin"></span></a> 
                                 </li>                                 

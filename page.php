@@ -55,7 +55,7 @@
                 <div class="mb-4">
                     <a href="https://www.linkedin.com/in/ui-martin-horvath/"> <img
                             src="<?php echo PG_Image::getUrl( get_theme_mod( 'img-ch', esc_url( get_template_directory_uri() . '/images/img_h_5-min.jpg' ) ), 'large' ) ?>"
-                            alt="Image" class="img-fluid rounded ">
+                            alt="Image" class="img-fluid rounded "></a>
                     <h3 class=" aubot-image">T.: (+421) 940 221 213</h3>
                     <h3 class=" aubot-image">E.: martinorvath@outlook.sk</h3>
                 </div>
