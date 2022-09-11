@@ -29,6 +29,7 @@
                         <div class="pt-5"> 
                             <ul class="comment-list"> 
                                 <li class="comment">
+                                    <p class=" co-coment ">Budem ti veľmi vďačný ak zanecháš komentár, vopred ďakujem za tvoj Feedback </p>
                                     <?php comments_template(); ?>
                                 </li>                                             
                             </ul>                                         

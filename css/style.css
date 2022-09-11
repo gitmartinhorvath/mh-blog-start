@@ -796,7 +796,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px; }
   .blog_entry h3 {
-    font-size: 18px; }
+    font-size: 24px; }
     .blog_entry h3 a {
       color: #000000; }
   .blog_entry .date {
@@ -1798,5 +1798,10 @@ blockquote {
   margin: 0 0 1rem;
   border-left: 5px solid #000;
   padding: 0 0px 0px 15px;
+}
+.co-coment{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
 }
 

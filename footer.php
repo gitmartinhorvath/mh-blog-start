@@ -89,7 +89,7 @@
                 </div>                 
                 <div class="row justify-content-center text-center copyright"> 
                     <div class="col-md-8"> 
-                        <p><?php _e( 'Copyright &copy; 2021 | www.martinhorvath.sk | All Rights Reserved.', 'blog' ); ?></a> 
+                        <p><?php _e( 'Copyright &copy; 2022 | www.martinhorvath.sk | All Rights Reserved.', 'blog' ); ?></a> 
                     </p>                     
                 </div>                 
             </div>             

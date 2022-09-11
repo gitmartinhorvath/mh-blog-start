@@ -23,9 +23,8 @@
                                 ), 'both', null ) ?></a> 
                             <div class="p-4 bg-white"> 
                                 <h3><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h3> 
-                                <span class="date"><?php the_time( get_option( 'date_format' ) ); ?></span> 
-                                <?php the_excerpt( ); ?> 
-                                <p class="more"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Čítaj viac...', 'blog' ); ?></a></p> 
+                                <span class="date"><?php the_time( get_option( 'date_format' ) ); ?></span>  
+                                <p class="more"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Prečítať článok...', 'blog' ); ?></a></p> 
                             </div>                                         
                         </div>                                     
                     </div>

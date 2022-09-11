@@ -56,7 +56,7 @@ Contributor
         <nav class="site-nav"> 
             <div class="container"> 
                 <div class="site-navigation"> 
-                    <a href="https://www.martinhorvath.sk/blog/" class="logo float-left m-0"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/Logo_black.svg" height="70" width="70"> <span class="text-primary"></span></a> 
+                    <a href="https://www.martinhorvath.sk" class="logo float-left m-0"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/Logo_black.svg" height="70" width="70"> <span class="text-primary"></span></a> 
                     <?php if ( has_nav_menu( 'primary' ) ) : ?>
                         <?php
                             PG_Smart_Walker_Nav_Menu::$options['template'] = '<li id="{ID}" class="{CLASSES}"> 
