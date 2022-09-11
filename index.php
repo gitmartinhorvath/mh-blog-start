@@ -60,20 +60,31 @@
                             <a target="_blank" class="share-button share-twitter" href="https://twitter.com/intent/tweet?url=<?php echo $postUrl; ?>&text=<?php echo the_title(); ?>&via=<?php the_author_meta( 'twitter' ); ?>" title="Tweet this"><span class="icon-twitter"></span></a> 
                         </li>                                     
                         <li> 
-                            <a arget="_blank" class="share-button share-googleplus" href="https://plus.google.com/share?url=<?php echo $postUrl; ?>" title="Share on Google+"><span class="icomoon icon-google-plus"></span></a> 
+                            <a arget="_blank" style="cursor: pointer;"   class="share-button share-googleplus" onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.martinhorvath.sk/','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on linkedin"><span class="icomoon icon-linkedin"></span></a> 
                         </li>                                     
                     </ul>                                 
                 </div>                             
             </div>                         
             <div class="col-lg-3 mb-5 mb-lg-0 order-lg-3"> 
                 <div class="mb-4"> 
-                    <a href="https://vimeo.com/342333493" data-fancybox class="video-wrap"> <img src="<?php echo PG_Image::getUrl( get_theme_mod( 'img-ch', esc_url( get_template_directory_uri() . '/images/img_h_5-min.jpg' ) ), 'large' ) ?>" alt="Image" class="img-fluid rounded"> </a> 
+                    <a href="https://www.linkedin.com/in/ui-martin-horvath/"> <img src="<?php echo PG_Image::getUrl( get_theme_mod( 'img-ch', esc_url( get_template_directory_uri() . '/images/img_h_5-min.jpg' ) ), 'large' ) ?>" alt="Image" class="img-fluid rounded"> </a> 
+                    <h6 class=" aubot-image">Ahoj ja som Martin,<br>Rád by som sa s tebou podelil s kúskom môjho ja a toho čo je mi najbližšie čo ma inšpiruje na mojej ceste životom. Preto som sa rozhodol vytvoriť blog v ktorom chcem poukázať na články o psychológii osobnostnom raste, o grafickom dizajne o mojich projektoch ktoré reálne pomáhajú ľudom.<br>Prajem ti pohodové čítanie.</h6>
                 </div>                             
                 <?php if ( is_active_sidebar( '_widget' ) ) : ?>
                     <div class="share floating-block sticky-top">
                         <?php dynamic_sidebar( '_widget' ); ?>
                     </div>
                 <?php endif; ?> 
+                
+                <h4>Kategórie</h4>
+                <hr>
+                <?php 
+                $args = array(
+                    'taxonomy' => array( 'category' ), 
+                ); 
+
+                wp_tag_cloud( $args );
+            ?>
             </div>                         
         </div>                     
     </div>                 

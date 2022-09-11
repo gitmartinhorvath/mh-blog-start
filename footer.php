@@ -11,9 +11,9 @@
                         <div class="widget"> 
                             <h3><?php _e( 'Spoj sa so mnou ', 'blog' ); ?></h3> 
                             <ul class="social list-unstyled"> 
-                                <li> 
+                                <!-- <li> 
                                     <a href="https://www.facebook.com/uiux.martinhorvath"><span class="icon-facebook"></span></a> 
-                                </li>                                 
+                                </li> -->                                
                                <!-- <li> 
                                     <a href="#"><span class="icon-twitter"></span></a> 
                                 </li>                                
@@ -24,7 +24,7 @@
                                     <a href="#"><span class="icon-dribbble"></span></a> 
                                 </li> -->                                 
                                 <li> 
-                                    <a href="https://www.linkedin.com/feed/"><span class="icon-linkedin"></span></a> 
+                                    <a href="https://www.linkedin.com/in/ui-martin-horvath/"><span class="icon-linkedin"></span></a> 
                                 </li>                                 
                             </ul>                             
                         </div>                         
@@ -33,7 +33,7 @@
                         <div class="row"> 
                             <div class="col-12"> 
                                 <div class="widget"> 
-                                    <h3><?php _e( 'Navigácie', 'blog' ); ?></h3> 
+                                    <h3><?php _e( 'Kategórie', 'blog' ); ?></h3> 
                                 </div>                                 
                             </div>                             
                             <div class="col-6 col-sm-6 col-md-4"> 
