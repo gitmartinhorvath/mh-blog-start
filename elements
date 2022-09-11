@@ -1,0 +1,43 @@
+<!-- widget - index _-->
+<div class="col-lg-3 mb-5 mb-lg-0 order-lg-3">
+    <div class="mb-4">
+        <a href="https://www.linkedin.com/in/ui-martin-horvath/"> <img
+                src="<?php echo PG_Image::getUrl( get_theme_mod( 'img-ch', esc_url( get_template_directory_uri() . '/images/img_h_5-min.jpg' ) ), 'large' ) ?>"
+                alt="Image" class="img-fluid rounded"> </a>
+        <h6 class=" aubot-image">Ahoj ja som Martin,<br>Rád by som sa s tebou podelil s kúskom môjho ja a toho čo je mi
+            najbližšie čo ma inšpiruje na mojej ceste životom. Preto som sa rozhodol vytvoriť blog v ktorom chcem
+            poukázať na články o psychológii osobnostnom raste, o grafickom dizajne o mojich projektoch ktoré reálne
+            pomáhajú ľudom.<br>Prajem ti pohodové čítanie.</h6>
+    </div>
+
+
+    <div class="co-widget">
+        <h4>Najnovšie články</h4>
+        <hr>
+        <?php
+            $recent_posts = wp_get_recent_posts();
+            foreach( $recent_posts as $recent ) {
+            printf( '<li><a href="%1$s">%2$s</a></li>',
+            esc_url( get_permalink( $recent['ID'] ) ),
+            apply_filters( 'the_title', $recent['post_title'], $recent['ID'] )
+            );
+            }?>
+    </div>
+                
+    <div>
+        <h4>Kategórie</h4>
+        <hr>
+        <?php 
+            $args = array(
+            'taxonomy' => array( 'category' ), 
+            ); 
+            wp_tag_cloud( $args );
+            ?>
+    </div>
+                
+    <?php if ( is_active_sidebar( '_widget' ) ) : ?>
+        <div class="share floating-block sticky-top">
+            <?php dynamic_sidebar( '_widget' ); ?>
+        </div>
+    <?php endif; ?>
+</div>

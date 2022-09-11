@@ -17,10 +17,10 @@
             <?php if ( have_posts() ) : ?>
                 <?php while ( have_posts() ) : the_post(); ?>
                     <?php PG_Helper::rememberShownPost(); ?>
-                    <article class="col-lg-8 order-lg-2 px-lg-5" id="post-<?php the_ID(); ?>"> 
+                    <article class="col-lg-9 order-lg-2 px-lg-5" id="post-<?php the_ID(); ?>"> 
                         <?php the_content(); ?> 
                         <div class="pt-5 categories_tags "> 
-                            <p><?php _e( 'Kategória :', 'blog' ); ?> <?php the_category(); ?></p> 
+                            <p><?php _e( 'Kategórie :', 'blog' ); ?> <?php the_category(); ?></p> 
                         </div>                                     
                         <!--  <div class="post-single-navigation d-flex align-items-stretch">
                     <a href="#" class="" wp-prev-post-link> A Mounteering Guide For Beginners </a>
@@ -41,7 +41,7 @@
             <?php endif; ?> 
             <div class="col-md-12 col-lg-1 order-lg-1"> 
                 <div class="share sticky-top"> 
-                    <h3><?php _e( 'Zdieľať', 'blog' ); ?></h3> 
+                    <!-- <h3><?php _e( 'Zdieľať', 'blog' ); ?></h3> -->
 
 
                     <?php 
@@ -65,28 +65,7 @@
                         </li>                                     
                     </ul>                                 
                 </div>                             
-            </div>                         
-            <div class="col-lg-3 mb-5 mb-lg-0 order-lg-3"> 
-                <div class="mb-4"> 
-                    <a href="https://www.linkedin.com/in/ui-martin-horvath/"> <img src="<?php echo PG_Image::getUrl( get_theme_mod( 'img-ch', esc_url( get_template_directory_uri() . '/images/img_h_5-min.jpg' ) ), 'large' ) ?>" alt="Image" class="img-fluid rounded"> </a> 
-                    <h6 class=" aubot-image">Ahoj ja som Martin,<br>Rád by som sa s tebou podelil s kúskom môjho ja a toho čo je mi najbližšie čo ma inšpiruje na mojej ceste životom. Preto som sa rozhodol vytvoriť blog v ktorom chcem poukázať na články o psychológii osobnostnom raste, o grafickom dizajne o mojich projektoch ktoré reálne pomáhajú ľudom.<br>Prajem ti pohodové čítanie.</h6>
-                </div>                             
-                <?php if ( is_active_sidebar( '_widget' ) ) : ?>
-                    <div class="share floating-block sticky-top">
-                        <?php dynamic_sidebar( '_widget' ); ?>
-                    </div>
-                <?php endif; ?> 
-                
-                <h4>Kategórie</h4>
-                <hr>
-                <?php 
-                $args = array(
-                    'taxonomy' => array( 'category' ), 
-                ); 
-
-                wp_tag_cloud( $args );
-            ?>
-            </div>                         
+            </div>                                                  
         </div>                     
     </div>                 
 </div>                         

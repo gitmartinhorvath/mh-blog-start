@@ -32,7 +32,8 @@
             <?php else : ?>
                 <p><?php _e( 'Ľutujeme, vašim kritériám nezodpovedajú žiadne príspevky.', 'blog' ); ?></p>
             <?php endif; ?>                                                                                                                              
-        </div>                                         
+        </div> 
+                                                
     </div>                 
 </div>                         
 
